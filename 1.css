@@ -1,0 +1,645 @@
+.box {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 26%;
+}
+
+.arrow{
+  position: absolute;
+  top: 46%;
+  right: 0%;
+  width: 90px;
+  border: 1px solid black;
+}
+
+.arrow:after {
+  content:'';
+  position: absolute;
+  top: -9px;
+  left: 0px;
+  width: 0;
+  height: 15px; width: 15px;
+  border: 1px solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(225deg);
+}
+
+.box-header{
+  position: absolute;
+  top: 40%;
+  right: 7.5%;
+  width: 400px;
+  height: 130px;
+  background-color: white;
+}
+
+.header {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 0%;
+  font-size: 25px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+}
+
+.header-1{
+  font-size: 25px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+}
+
+.header2 {
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 0%;
+  font-size: 25px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.header2:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.header3 {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0%;
+  font-size: 25px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+  display: block;
+  z-index: 2;
+}
+
+.header3:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.line{
+  position: absolute;
+  top: 46.5%;
+  right: 41%;
+  width: 380px;
+  border: 1px solid black;
+}
+
+.box2{
+  position: absolute;
+  top: 23%;
+  left: 9%;
+  width: 78%;
+  height: 77%;
+  overflow: scroll;
+}
+
+.box2::-webkit-scrollbar {
+    display: none;
+}
+
+.box3{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 64.7%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  font-size: 40px;
+  line-height: 35px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+}
+
+.title:hover{
+  cursor: pointer;
+}
+
+.note{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: 10px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  0% {opacity:0%;}
+  30% {opacity:100%;}
+  60% {opacity:100%;}
+  100% {opacity:0%;}
+}
+
+.body {
+  position: absolute;
+  top: 21%;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  text-align: justify;
+  text-justify: auto;
+}
+
+.body-bold {
+  font-weight: bold;
+}
+
+.quote-box{
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  width: 500px;
+  height: 145px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.quote-box:hover{
+  cursor: pointer;
+}
+
+.quote{
+  margin: 4%;
+  font-size: 19px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quote-box2{
+  position: absolute;
+  top: 85%;
+  right: 0%;
+  width: 500px;
+  height: 95px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.quote-box2:hover{
+  cursor: pointer;
+}
+
+.underline{
+  text-decoration: underline;
+  z-index: 3;
+}
+
+.underline:hover{
+  cursor: pointer;
+}
+
+.title2 {
+  position: absolute;
+  top: 110%;
+  font-size: 40px;
+  line-height: 35px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+}
+
+.title2:hover{
+  cursor: pointer;
+}
+
+.title3 {
+  display: none;
+}
+
+.body2{
+  position: absolute;
+  top: 116%;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  text-align: justify;
+  text-justify: auto;
+}
+
+.body3{
+  display:none;
+}
+
+.body4{
+  display:none;
+}
+
+.footer-box{
+  position: absolute;
+  right: 0%;
+  top: 65%;
+  width: 350px;
+  height: 130px;
+  display: none;
+}
+
+.hl{
+  width: 350px;
+  border: 1px solid black;
+}
+
+.footer{
+  position: absolute;
+  top: 15%;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: bold;
+  font-style: normal;   
+}
+
+.underline2{
+  text-decoration: underline;
+  z-index: 3;
+}
+
+.underline2:hover{
+  cursor: pointer;
+}
+
+.footer-box2{
+  position: absolute;
+  right: 0%;
+  top: 117.5%;
+  width: 350px;
+  height: 130px;
+  display: none;
+}
+
+.game-box{
+  position: absolute;
+  top: 253%;
+  right: 1%;
+  width: 350px;
+  height: 270px;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.game-box:hover{
+  transform: scale(1.01);
+}
+
+.game{
+  margin: 10%;
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.game2{
+  position: absolute;
+  margin: 10%;
+  top: 60%;
+  font-size: 17px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+}
+
+.game-arrow{
+  position: absolute;
+  margin: 10%;
+  top: 60%;
+  right: 0%;
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@media screen and (max-width: 390px) {
+
+.box {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 18%;
+}
+
+.arrow{
+  position: absolute;
+  top: 39%;
+  right: 0%;
+  width: 40px;
+  border: 1px solid black;
+}
+
+.arrow:after {
+  content:'';
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  width: 0;
+  height: 10px; width: 10px;
+  border: 1px solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(225deg);
+}
+  
+.box-header{
+  position: absolute;
+  top: 31%;
+  right: 1.5%;
+  width: 300px;
+  height: 80px;
+  background-color: transparent;
+}
+
+.header {
+  position: absolute;
+  display: block;
+  top: 0%;
+  left: 0%;
+  font-size: 19px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+}
+
+.header-1{
+  font-size: 19px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+}
+  
+.header2 {
+  position: absolute;
+  display: block;
+  top: 25.5%;
+  left: 0%;
+  font-size: 19px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.header3 {
+  position: absolute;
+  display: block;
+  top: 52%;
+  left: 0%;
+  font-size: 19px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.line{
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  width: 80px;
+  border: 1px solid black;
+}
+
+.box2{
+  position: absolute;
+  top: 20.5%;
+  left: 7.5%;
+  width: 86%;
+  height: 77%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.box3{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  font-size: 28px;
+  line-height: 25px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+}
+
+.note{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: 12px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.body {
+  position: absolute;
+  top: 30%;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  text-align: left;
+  display: none;
+}
+
+.quote-box{
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  width: 96%;
+  height: 140px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.quote{
+  margin: 4%;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quote-box2{
+  position: absolute;
+  top: 223%;
+  right: 3%;
+  width: 96%;
+  height: 95px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.title2 {
+  display:none;
+}
+  
+.title3 {
+  position: absolute;
+  top: 310%;
+  font-size: 28px;
+  line-height: 25px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal; 
+  z-index: 2;
+  display:block;
+}
+
+.body2{
+  display: none;
+}
+
+.body3 {
+  position: absolute;
+  top: 30%;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  text-align: left;
+  display: block;
+}
+  
+.body4{
+  position: absolute;
+  top: 320.5%;
+  font-size: 17px;
+  line-height: 21px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+  text-align: left;
+  display: block;
+}
+
+.footer-box{
+  position: absolute;
+  top: 797%;
+  right: 0%;
+  width: 100%;
+  height: 130px;
+  display: block;
+}
+
+.hl{
+  width: 350px;
+  border: 1px solid black;
+}
+
+.footer{
+  position: absolute;
+  top: 15%;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: bold;
+  font-style: normal;   
+}
+
+.footer-box2{
+  position: absolute;
+  top: 822%;
+  right: 0%;
+  width: 100%;
+  height: 130px;
+  display: block;
+}
+
+.game-box{
+  position: absolute;
+  top: 847%;
+  right: 0%;
+  width: 98.5%;
+  height: 270px;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.game{
+  margin: 10%;
+  font-size: 35px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.game2{
+  position: absolute;
+  margin: 10%;
+  top: 65%;
+  font-size: 17px;
+  font-family: prestige-elite-std, monospace;
+  font-weight: normal;
+  font-style: normal;   
+}
+
+.game-arrow{
+  position: absolute;
+  margin: 10%;
+  top: 60%;
+  right: 0%;
+  font-size: 40px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+  
+}
